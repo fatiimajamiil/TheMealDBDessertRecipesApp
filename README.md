@@ -1,6 +1,8 @@
 # TheMealDBDessertRecipesApp
 The MealDBDessertRecipesApp is a mobile application that provides a collection of dessert recipes for users to explore and try out. It offers a variety of dessert options and allows users to view detailed information about each recipe.
 
+**Overview**
+-----------
 **Features**
 - Browse a list of dessert recipes.
 - View detailed information about a specific recipe
@@ -14,9 +16,9 @@ The MealDBDessertRecipesApp is a mobile application that provides a collection o
 
 (_Screen Recording of App:_ 
 https://www.youtube.com/shorts/mHzQ_N5sA-A)
-<br>
 
 **MVVM Architecture:**
+-----------
 The app follows the MVVM architectural pattern, which separates the user interface (View) from the underlying data (Model) by introducing a mediator component called ViewModel. Here's how the components are organized in the app:
 
 *Models:*
@@ -39,3 +41,19 @@ The app follows the MVVM architectural pattern, which separates the user interfa
 - DessertListScreen: Brings together multiple views (DessertListView + DessertDetailView)
 
 The MVVM architecture helps to maintain a clear separation of concerns, making the code more modular and testable. It enables easier maintenance and extensibility as the application grows.
+
+**Unit Testing**
+-----------
+
+- The unit testing suite focuses on testing the various components of the app, including:
+
+_Model:_ Tests the data structures ain the model layer. This includes testing decoding of JSON responses and data transformations.
+
+_ViewModel:_ ViewModel tests verify that the ViewModel properly handles data retrieval, transformation
+
+- Unit testing was done following dependency injection to allow for easier testing by "injecting" mock dependencies. I created the MockWebservice class to help implement this. It simulates the behavior of the actual web service by providing mock responses from JSON data files. The mock data responses are stored as JSON files within the project's test bundle.
+
+- The JSON data files contain sample responses that represent various scenarios and edge cases that need to be tested. Each JSON file corresponds to a specific API endpoint or data structure used in the app. The test cases can load the mock data from these files and use them to simulate network requests and responses.
+
+- The Mocks folder contains the Mock Webservice, mock data responses, and a loadMockData method to load the data responses from the JSON files.
+
