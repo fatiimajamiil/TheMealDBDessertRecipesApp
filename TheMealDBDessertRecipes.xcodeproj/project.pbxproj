@@ -10,7 +10,6 @@
 		EE8119752A3C0E6800B2E5C3 /* TheMealDBDessertRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119742A3C0E6800B2E5C3 /* TheMealDBDessertRecipesApp.swift */; };
 		EE8119792A3C0E6900B2E5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8119782A3C0E6900B2E5C3 /* Assets.xcassets */; };
 		EE81197C2A3C0E6900B2E5C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE81197B2A3C0E6900B2E5C3 /* Preview Assets.xcassets */; };
-		EE8119862A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119852A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift */; };
 		EE8119A52A3C0EC900B2E5C3 /* DessertListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119A42A3C0EC900B2E5C3 /* DessertListScreen.swift */; };
 		EE8119A72A3C0EEE00B2E5C3 /* DessertListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119A62A3C0EEE00B2E5C3 /* DessertListViewModel.swift */; };
 		EE8119A92A3C0EFC00B2E5C3 /* DessertDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119A82A3C0EFC00B2E5C3 /* DessertDetailViewModel.swift */; };
@@ -57,7 +56,6 @@
 		EE8119782A3C0E6900B2E5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE81197B2A3C0E6900B2E5C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE8119812A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMealDBDessertRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE8119852A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDBDessertRecipesTests.swift; sourceTree = "<group>"; };
 		EE81198B2A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMealDBDessertRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8119A42A3C0EC900B2E5C3 /* DessertListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListScreen.swift; sourceTree = "<group>"; };
 		EE8119A62A3C0EEE00B2E5C3 /* DessertListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewModel.swift; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 			children = (
 				EE8119C22A3C1A7600B2E5C3 /* UnitTests */,
 				EE8119B72A3C185A00B2E5C3 /* Mocks */,
-				EE8119852A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift */,
 			);
 			path = TheMealDBDessertRecipesTests;
 			sourceTree = "<group>";
@@ -397,7 +394,6 @@
 				EE8119C62A3C1A9F00B2E5C3 /* DessertDetailViewModel.swift in Sources */,
 				EE8119CA2A3C1AEB00B2E5C3 /* DessertDetailResponse.swift in Sources */,
 				EE8119C82A3C1ABC00B2E5C3 /* DessertListResponse.swift in Sources */,
-				EE8119862A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift in Sources */,
 				EE8119C42A3C1A8900B2E5C3 /* DessertListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
