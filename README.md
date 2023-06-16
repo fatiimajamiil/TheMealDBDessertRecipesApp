@@ -6,9 +6,10 @@ Browse a list of dessert recipes.
 View detailed information about a specific recipe.
 Sort recipes alphabetically.
 
-Screenshots
-![Simulator Screenshot - iPhone 14 Pro - 2023-06-16 at 02 01 14](https://github.com/fatiimajamiil/TheMealDBDessertRecipesApp/assets/113564184/05d21b9a-ea4c-4aef-b666-84856e1086b3)
-![Simulator Screenshot - iPhone 14 Pro - 2023-06-16 at 02 00 55](https://github.com/fatiimajamiil/TheMealDBDessertRecipesApp/assets/113564184/1ba85bc0-bfcd-479f-80ff-30fe908944fc)
+<img src="https://github.com/fatiimajamiil/TheMealDBDessertRecipesApp/assets/113564184/05d21b9a-ea4c-4aef-b666-84856e1086b3" alt="Simulator Screenshot - iPhone 14 Pro - 2023-06-16 at 02 01 14" style="max-width: 50px;">
+
+<img src="https://github.com/fatiimajamiil/TheMealDBDessertRecipesApp/assets/113564184/1ba85bc0-bfcd-479f-80ff-30fe908944fc" alt="Simulator Screenshot - iPhone 14 Pro - 2023-06-16 at 02 00 55" style="max-width: 50px;">
+
 
 
 MVVM Architecture
