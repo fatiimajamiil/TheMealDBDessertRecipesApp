@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EE8119752A3C0E6800B2E5C3 /* TheMealDBDessertRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119742A3C0E6800B2E5C3 /* TheMealDBDessertRecipesApp.swift */; };
-		EE8119772A3C0E6800B2E5C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119762A3C0E6800B2E5C3 /* ContentView.swift */; };
 		EE8119792A3C0E6900B2E5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8119782A3C0E6900B2E5C3 /* Assets.xcassets */; };
 		EE81197C2A3C0E6900B2E5C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE81197B2A3C0E6900B2E5C3 /* Preview Assets.xcassets */; };
 		EE8119862A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119852A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift */; };
@@ -23,6 +22,9 @@
 		EE8119B12A3C0FA800B2E5C3 /* DessertListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119B02A3C0FA800B2E5C3 /* DessertListView.swift */; };
 		EE8119B32A3C0FD300B2E5C3 /* DessertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119B22A3C0FD300B2E5C3 /* DessertDetailView.swift */; };
 		EE8119B62A3C104800B2E5C3 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119B52A3C104800B2E5C3 /* WebService.swift */; };
+		EE8119B92A3C186D00B2E5C3 /* MockDetailResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8119B82A3C186D00B2E5C3 /* MockDetailResponse.json */; };
+		EE8119BB2A3C189300B2E5C3 /* MockDetailErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8119BA2A3C189300B2E5C3 /* MockDetailErrorResponse.json */; };
+		EE8119BD2A3C18BF00B2E5C3 /* MockListResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8119BC2A3C18BF00B2E5C3 /* MockListResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,6 @@
 /* Begin PBXFileReference section */
 		EE8119712A3C0E6800B2E5C3 /* TheMealDBDessertRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMealDBDessertRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8119742A3C0E6800B2E5C3 /* TheMealDBDessertRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDBDessertRecipesApp.swift; sourceTree = "<group>"; };
-		EE8119762A3C0E6800B2E5C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE8119782A3C0E6900B2E5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE81197B2A3C0E6900B2E5C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE8119812A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMealDBDessertRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +63,9 @@
 		EE8119B02A3C0FA800B2E5C3 /* DessertListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListView.swift; sourceTree = "<group>"; };
 		EE8119B22A3C0FD300B2E5C3 /* DessertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailView.swift; sourceTree = "<group>"; };
 		EE8119B52A3C104800B2E5C3 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		EE8119B82A3C186D00B2E5C3 /* MockDetailResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockDetailResponse.json; sourceTree = "<group>"; };
+		EE8119BA2A3C189300B2E5C3 /* MockDetailErrorResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockDetailErrorResponse.json; sourceTree = "<group>"; };
+		EE8119BC2A3C18BF00B2E5C3 /* MockListResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockListResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +124,6 @@
 				EE81199F2A3C0E7A00B2E5C3 /* ViewModels */,
 				EE81199E2A3C0E7200B2E5C3 /* Services */,
 				EE8119742A3C0E6800B2E5C3 /* TheMealDBDessertRecipesApp.swift */,
-				EE8119762A3C0E6800B2E5C3 /* ContentView.swift */,
 				EE8119782A3C0E6900B2E5C3 /* Assets.xcassets */,
 				EE81197A2A3C0E6900B2E5C3 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 		EE8119842A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests */ = {
 			isa = PBXGroup;
 			children = (
+				EE8119B72A3C185A00B2E5C3 /* Mocks */,
 				EE8119852A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift */,
 			);
 			path = TheMealDBDessertRecipesTests;
@@ -208,6 +212,16 @@
 				EE8119B52A3C104800B2E5C3 /* WebService.swift */,
 			);
 			path = WebServices;
+			sourceTree = "<group>";
+		};
+		EE8119B72A3C185A00B2E5C3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EE8119B82A3C186D00B2E5C3 /* MockDetailResponse.json */,
+				EE8119BA2A3C189300B2E5C3 /* MockDetailErrorResponse.json */,
+				EE8119BC2A3C18BF00B2E5C3 /* MockListResponse.json */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +337,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8119BD2A3C18BF00B2E5C3 /* MockListResponse.json in Resources */,
+				EE8119B92A3C186D00B2E5C3 /* MockDetailResponse.json in Resources */,
+				EE8119BB2A3C189300B2E5C3 /* MockDetailErrorResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +358,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE8119B62A3C104800B2E5C3 /* WebService.swift in Sources */,
-				EE8119772A3C0E6800B2E5C3 /* ContentView.swift in Sources */,
 				EE8119A52A3C0EC900B2E5C3 /* DessertListScreen.swift in Sources */,
 				EE8119B32A3C0FD300B2E5C3 /* DessertDetailView.swift in Sources */,
 				EE8119AF2A3C0F6500B2E5C3 /* DessertDetailResponse.swift in Sources */,
