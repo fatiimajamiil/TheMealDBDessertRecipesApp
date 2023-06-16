@@ -7,25 +7,32 @@
 
 import Foundation
 import SwiftUI
+
+/// A view displaying the details of a dessert.
 struct DessertDetailView: View {
     @StateObject private var viewModel: DessertDetailViewModel
     let bounds = UIScreen.main.bounds
     let dessertId: String
 
+    /// Initializes the view with a dessert ID.
     init(dessertId: String) {
         self.dessertId = dessertId
         _viewModel = StateObject(wrappedValue: DessertDetailViewModel(dessertId: dessertId))
     }
+    
     var body: some View {
         
         List {
-            // Rest of view...
+            
+            /// <if let> is used to display only non nil values + checking to make sure if the parameter is not empty to filter out null/empty values from the API before displaying them
+            // Display the dessert name
             if let dessertName = viewModel.recipeDetail?.strMeal, !dessertName.isEmpty {
                 Text("\(dessertName.capitalized)")
                     .font(.largeTitle)
                     .fontWeight(.bold)
             }
             
+            // Display the dessert image
             if let imageUrl = URL(string: viewModel.recipeDetail?.strMealThumb ?? "") {
                 AsyncImage(url: imageUrl) { image in
                     image
@@ -39,6 +46,7 @@ struct DessertDetailView: View {
                 }
             }
 
+            // Display the list of ingredients with their measurements
             if let ingredients = viewModel.recipeDetail?.ingredients, let measurements = viewModel.recipeDetail?.measurements {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Ingredients:")
@@ -63,6 +71,7 @@ struct DessertDetailView: View {
                 }
             }
             
+            // Display the instructions for preparing the dessert
             if let instructions = viewModel.recipeDetail?.strInstructions,
                !instructions.isEmpty {
                 VStack(alignment: .leading, spacing: 0) {
@@ -92,9 +101,6 @@ struct DessertDetailView: View {
         .listStyle(InsetGroupedListStyle())
         .navigationBarTitle("", displayMode: .inline) // Empty title
         .padding(.top, -30)
-        //.onAppear {
-        //    viewModel.fetchRecipeDetails()
-        //}
         .task {
             await viewModel.fetchRecipeDetails()
         }

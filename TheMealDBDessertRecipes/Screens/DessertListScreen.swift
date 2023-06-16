@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// Sets up the initial screen for displaying the dessert recipe list, instantiates the necessary view model, and triggers the asynchronous population of dessert categories when the view appears
 struct DessertListScreen: View {
     @StateObject var viewModel = DessertListViewModel()
 
