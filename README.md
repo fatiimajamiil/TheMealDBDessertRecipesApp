@@ -1,5 +1,5 @@
 # TheMealDBDessertRecipesApp
-The Dessert Recipes App is a mobile application that provides a collection of dessert recipes for users to explore and try out. It offers a variety of dessert options and allows users to view detailed information about each recipe.
+The MealDBDessertRecipesApp is a mobile application that provides a collection of dessert recipes for users to explore and try out. It offers a variety of dessert options and allows users to view detailed information about each recipe.
 
 Features
 Browse a list of dessert recipes.
