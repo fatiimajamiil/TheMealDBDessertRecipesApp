@@ -21,6 +21,7 @@ class DessertListViewModel: ObservableObject {
         dessertDetailViewModel = DessertDetailViewModel(dessertId: "")
     }
     
+    // fetches list of desserts from API using a webservice
     func populateCategories(using webservice: Webservice? = nil) async {
         let webServiceToUse = webservice ?? self.webservice
         
@@ -28,7 +29,7 @@ class DessertListViewModel: ObservableObject {
             let dessertListResponse = try await webServiceToUse.get(url: Constants.Urls.dessertListUrl) { data in
                 return try? JSONDecoder().decode(DessertListResponse.self, from: data)
             }
-            
+            // updating recipes property with received dessert list
             if let dessertList = dessertListResponse.meals {
                 self.recipes = dessertList
             } else {
@@ -39,7 +40,7 @@ class DessertListViewModel: ObservableObject {
             print(error)
         }
     }
-    
+    // creates instance of DessertDetailViewModel using the selected dessert ID
     func selectDessert(_ dessert: Meal) {
         selectedDessert = dessert
         dessertDetailViewModel = DessertDetailViewModel(dessertId: dessert.idMeal)

@@ -7,10 +7,12 @@
 
 import Foundation
 
+/// A view model class responsible for fetching and managing dessert recipe details
 class DessertDetailViewModel: ObservableObject {
     @Published var recipeDetail: RecipeDetail?
     @Published var error: Error?
     
+    /// Represents an ingredient and its corresponding measurement.
     struct IngredientMeasurement: Identifiable {
         let id = UUID()
         let ingredient: String
@@ -19,10 +21,12 @@ class DessertDetailViewModel: ObservableObject {
     
     internal let dessertId: String
     
+    /// Initializes the view model with a dessert ID
     init(dessertId: String = "") {
         self.dessertId = dessertId
     }
     
+    /// Fetches the recipe details from the API using web service
     func fetchRecipeDetails(using webservice: Webservice = Webservice()) async {
         let url = Constants.Urls.recipeDetailsUrl(for: dessertId)
         

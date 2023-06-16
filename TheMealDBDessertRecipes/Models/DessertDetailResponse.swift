@@ -8,10 +8,12 @@
 import Foundation
 import SwiftUI
 
+/// Represents the response structure for the dessert detail API
 struct DessertDetailResponse: Decodable {
     var meals: [RecipeDetail]?
 }
 
+/// Represents the detailed information of a recipe
 struct RecipeDetail: Codable {
     let idMeal: String
     let strMeal: String
@@ -67,12 +69,14 @@ struct RecipeDetail: Codable {
     let strCreativeCommonsConfirmed: String?
     let dateModified: String?
     
+    /// An array of ingredients used in the recipe
     var ingredients: [String] {
         return [strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strIngredient16, strIngredient17, strIngredient18, strIngredient19, strIngredient20]
             .compactMap { $0 }
             .filter { !$0.isEmpty }
     }
     
+    /// An array of measurements corresponding to the ingredients used in the recipe
     var measurements: [String] {
         return [strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15, strMeasure16, strMeasure17, strMeasure18, strMeasure19, strMeasure20]
             .compactMap { $0 }
