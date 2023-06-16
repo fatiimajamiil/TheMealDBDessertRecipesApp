@@ -19,20 +19,17 @@ Models:
 
 
 View: 
-- DessertListView and DessertDetailView
 - Rendering the user interface and handling user interactions
 - DessertListView: Rendering the list of desserts
 - DessertDetailView: Rendering the details of a selected dessert 
 
 ViewModel: 
-- DessertListViewModel and DessertDetailViewModel
 - Acts as a bridge between the View and the Model
 - Retrieves the necessary data from the Model and prepares it for presentation in the View
 - DessertListViewModel: Responsible for fetching the dessert list from the API and managing the list of desserts. It holds an instance of DessertDetailViewModel to handle the details of the selected dessert. It provides methods for populating the dessert list, selecting a dessert, and updating the state of the selected dessert.
 - DessertDetailViewModel: Handles the fetching and presentation of the details for a selected dessert
 
 Screens:
-- DessertListScreen
-- Brings together multiple views (DessertListView + DessertDetailView)
+- DessertListScreen: Brings together multiple views (DessertListView + DessertDetailView)
 
 The MVVM architecture helps to maintain a clear separation of concerns, making the code more modular and testable. It enables easier maintenance and extensibility as the application grows.
