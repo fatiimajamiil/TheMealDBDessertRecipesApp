@@ -57,3 +57,4 @@ _ViewModel:_ ViewModel tests verify that the ViewModel properly handles data ret
 
 - The Mocks folder contains the Mock Webservice, mock data responses, and a loadMockData method to load the data responses from the JSON files.
 
+- A design decision was made to not unit test the Views in isolation, because of their dependency on the underlying framework. The Views could be tested down the line with integration tests. 
