@@ -25,6 +25,15 @@
 		EE8119B92A3C186D00B2E5C3 /* MockDetailResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8119B82A3C186D00B2E5C3 /* MockDetailResponse.json */; };
 		EE8119BB2A3C189300B2E5C3 /* MockDetailErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8119BA2A3C189300B2E5C3 /* MockDetailErrorResponse.json */; };
 		EE8119BD2A3C18BF00B2E5C3 /* MockListResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8119BC2A3C18BF00B2E5C3 /* MockListResponse.json */; };
+		EE8119BF2A3C1A3700B2E5C3 /* MockDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119BE2A3C1A3700B2E5C3 /* MockDataLoader.swift */; };
+		EE8119C12A3C1A5100B2E5C3 /* MockWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119C02A3C1A5100B2E5C3 /* MockWebservice.swift */; };
+		EE8119C42A3C1A8900B2E5C3 /* DessertListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119C32A3C1A8900B2E5C3 /* DessertListViewModel.swift */; };
+		EE8119C62A3C1A9F00B2E5C3 /* DessertDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119C52A3C1A9F00B2E5C3 /* DessertDetailViewModel.swift */; };
+		EE8119C82A3C1ABC00B2E5C3 /* DessertListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119C72A3C1ABC00B2E5C3 /* DessertListResponse.swift */; };
+		EE8119CA2A3C1AEB00B2E5C3 /* DessertDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119C92A3C1AEB00B2E5C3 /* DessertDetailResponse.swift */; };
+		EE8119CB2A3C1B1200B2E5C3 /* MockDetailResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8119B82A3C186D00B2E5C3 /* MockDetailResponse.json */; };
+		EE8119CC2A3C1B1200B2E5C3 /* MockDetailErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8119BA2A3C189300B2E5C3 /* MockDetailErrorResponse.json */; };
+		EE8119CD2A3C1B1200B2E5C3 /* MockListResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8119BC2A3C18BF00B2E5C3 /* MockListResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +75,12 @@
 		EE8119B82A3C186D00B2E5C3 /* MockDetailResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockDetailResponse.json; sourceTree = "<group>"; };
 		EE8119BA2A3C189300B2E5C3 /* MockDetailErrorResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockDetailErrorResponse.json; sourceTree = "<group>"; };
 		EE8119BC2A3C18BF00B2E5C3 /* MockListResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockListResponse.json; sourceTree = "<group>"; };
+		EE8119BE2A3C1A3700B2E5C3 /* MockDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataLoader.swift; sourceTree = "<group>"; };
+		EE8119C02A3C1A5100B2E5C3 /* MockWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebservice.swift; sourceTree = "<group>"; };
+		EE8119C32A3C1A8900B2E5C3 /* DessertListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewModel.swift; sourceTree = "<group>"; };
+		EE8119C52A3C1A9F00B2E5C3 /* DessertDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewModel.swift; sourceTree = "<group>"; };
+		EE8119C72A3C1ABC00B2E5C3 /* DessertListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListResponse.swift; sourceTree = "<group>"; };
+		EE8119C92A3C1AEB00B2E5C3 /* DessertDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +156,7 @@
 		EE8119842A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests */ = {
 			isa = PBXGroup;
 			children = (
+				EE8119C22A3C1A7600B2E5C3 /* UnitTests */,
 				EE8119B72A3C185A00B2E5C3 /* Mocks */,
 				EE8119852A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift */,
 			);
@@ -220,8 +236,21 @@
 				EE8119B82A3C186D00B2E5C3 /* MockDetailResponse.json */,
 				EE8119BA2A3C189300B2E5C3 /* MockDetailErrorResponse.json */,
 				EE8119BC2A3C18BF00B2E5C3 /* MockListResponse.json */,
+				EE8119BE2A3C1A3700B2E5C3 /* MockDataLoader.swift */,
+				EE8119C02A3C1A5100B2E5C3 /* MockWebservice.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		EE8119C22A3C1A7600B2E5C3 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE8119C32A3C1A8900B2E5C3 /* DessertListViewModel.swift */,
+				EE8119C52A3C1A9F00B2E5C3 /* DessertDetailViewModel.swift */,
+				EE8119C72A3C1ABC00B2E5C3 /* DessertListResponse.swift */,
+				EE8119C92A3C1AEB00B2E5C3 /* DessertDetailResponse.swift */,
+			);
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +357,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8119CB2A3C1B1200B2E5C3 /* MockDetailResponse.json in Resources */,
+				EE8119CC2A3C1B1200B2E5C3 /* MockDetailErrorResponse.json in Resources */,
+				EE8119CD2A3C1B1200B2E5C3 /* MockListResponse.json in Resources */,
 				EE81197C2A3C0E6900B2E5C3 /* Preview Assets.xcassets in Resources */,
 				EE8119792A3C0E6900B2E5C3 /* Assets.xcassets in Resources */,
 			);
@@ -374,7 +406,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8119BF2A3C1A3700B2E5C3 /* MockDataLoader.swift in Sources */,
+				EE8119C12A3C1A5100B2E5C3 /* MockWebservice.swift in Sources */,
+				EE8119C62A3C1A9F00B2E5C3 /* DessertDetailViewModel.swift in Sources */,
+				EE8119CA2A3C1AEB00B2E5C3 /* DessertDetailResponse.swift in Sources */,
+				EE8119C82A3C1ABC00B2E5C3 /* DessertListResponse.swift in Sources */,
 				EE8119862A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift in Sources */,
+				EE8119C42A3C1A8900B2E5C3 /* DessertListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
