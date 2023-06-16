@@ -11,6 +11,7 @@ import XCTest
 
 final class DessertListResponseTests: XCTestCase {
     
+    ///Tests the decoding of the DessertListResponse struct
     func testDessertListResponseDecoding() throws {
         // Given
         let jsonData = try MockDataLoader.loadMockData(fromFile: "MockListResponse")
@@ -23,6 +24,7 @@ final class DessertListResponseTests: XCTestCase {
         XCTAssertNotNil(response.meals)
         XCTAssertEqual(response.meals?.count, 64)
         
+        // Verify the details of the first meal
         let firstMeal = response.meals?.first
         XCTAssertEqual(firstMeal?.idMeal, "53049")
         XCTAssertEqual(firstMeal?.strMeal, "Apam balik")

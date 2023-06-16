@@ -4,11 +4,13 @@
 //
 //  Created by Fatima Jamil on 6/16/23.
 //
+
 import XCTest
 @testable import TheMealDBDessertRecipes
 
 final class DessertDetailResponseTests: XCTestCase {
 
+    /// Tests the decoding of the DessertDetailResponse struct
     func testDessertDetailResponseDecoding() throws {
         // Given
         let jsonData = try MockDataLoader.loadMockData(fromFile: "MockDetailResponse")
@@ -21,6 +23,7 @@ final class DessertDetailResponseTests: XCTestCase {
         XCTAssertNotNil(response.meals)
         XCTAssertEqual(response.meals?.count, 1)
         
+        // Verify the details of the first meal
         let meal = response.meals?.first
         XCTAssertEqual(meal?.idMeal, "52893")
         XCTAssertEqual(meal?.strMeal, "Apple & Blackberry Crumble")
@@ -31,6 +34,7 @@ final class DessertDetailResponseTests: XCTestCase {
         XCTAssertEqual(meal?.strTags, "Pudding")
         XCTAssertEqual(meal?.strYoutube, "https://www.youtube.com/watch?v=4vhcOwVBDO4")
         
+        // Verify the ingredients and measurements
         XCTAssertEqual(meal?.strIngredient1, "Plain Flour")
         XCTAssertEqual(meal?.strIngredient2, "Caster Sugar")
         XCTAssertEqual(meal?.strIngredient3, "Butter")

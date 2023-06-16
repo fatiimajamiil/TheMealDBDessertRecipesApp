@@ -8,24 +8,28 @@
 import XCTest
 @testable import TheMealDBDessertRecipes
 
+/// Unit tests for the DessertListViewModel class
 final class DessertListViewModelTests: XCTestCase {
     
     var viewModel: DessertListViewModel!
     var webservice: MockWebservice!
     var dessert: Meal!
     
+    /// Sets up the necessary objects and configurations before each test case
     @MainActor override func setUp() {
         super.setUp()
         viewModel = DessertListViewModel()
         webservice = MockWebservice()
     }
+    
+    ///Cleans up the objects and configurations after each test case
     override func tearDown() {
         viewModel = nil
         webservice = nil
         dessert = nil
         super.tearDown()
     }
-    
+    ///Tests the populateCategories() and selectDessert() methods of the DessertListViewModel class
     func testPopulateCategoriesAndSelectDessert() async throws {
         // Given
         do {

@@ -4,6 +4,7 @@
 //
 //  Created by Fatima Jamil on 6/16/23.
 //
+
 import XCTest
 @testable import TheMealDBDessertRecipes
 
@@ -12,18 +13,21 @@ final class DessertDetailViewModelTests: XCTestCase {
     var viewModel: DessertDetailViewModel!
     var webservice: MockWebservice!
 
+    /// Sets up the necessary objects and configurations before each test case
     override func setUp() {
         super.setUp()
         viewModel = DessertDetailViewModel()
         webservice = MockWebservice()
     }
-
+    
+    ///Cleans up the objects and configurations after each test case
     override func tearDown() {
         viewModel = nil
         webservice = nil
         super.tearDown()
     }
 
+    /// This test case validates that the fetchRecipeDetails() method correctly retrieves and processes the details of a dessert recipe. It mocks a successful response from the webservice using the MockWebservice class, and then verifies that the recipe details are correctly populated in the DessertDetailViewModel instance
     func testFetchRecipeDetails() async throws {
         // Given
         viewModel = DessertDetailViewModel(dessertId: "52893")
@@ -52,7 +56,7 @@ final class DessertDetailViewModelTests: XCTestCase {
         XCTAssertNil(viewModel.error, "Error should be nil")
     }
 
-
+    /// This test case validates the error handling behavior of the fetchRecipeDetails() method. It mocks an error response from the webservice using the MockWebservice class, and then verifies that the error is correctly captured in the DessertDetailViewModel instance
     func testFetchRecipeDetailsWithError() async throws {
         // Given
         viewModel = DessertDetailViewModel(dessertId: "12345")
