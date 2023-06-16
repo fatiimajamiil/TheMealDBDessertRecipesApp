@@ -11,6 +11,9 @@ The MealDBDessertRecipesApp is a mobile application that provides a collection o
 <img src="https://github.com/fatiimajamiil/TheMealDBDessertRecipesApp/assets/113564184/1ba85bc0-bfcd-479f-80ff-30fe908944fc" alt="Simulator Screenshot - iPhone 14 Pro - 2023-06-16 at 02 00 55" width="250" height="auto">
 <img src="https://github.com/fatiimajamiil/TheMealDBDessertRecipesApp/assets/113564184/05d21b9a-ea4c-4aef-b666-84856e1086b3" alt="Simulator Screenshot - iPhone 14 Pro - 2023-06-16 at 02 01 14" width="250" height="auto">
 <br>
+
+(_Screen Recording of App:_ 
+https://www.youtube.com/shorts/mHzQ_N5sA-A)
 <br>
 
 **MVVM Architecture:**
