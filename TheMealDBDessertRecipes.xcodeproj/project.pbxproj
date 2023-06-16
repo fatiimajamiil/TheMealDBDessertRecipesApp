@@ -11,8 +11,6 @@
 		EE8119792A3C0E6900B2E5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8119782A3C0E6900B2E5C3 /* Assets.xcassets */; };
 		EE81197C2A3C0E6900B2E5C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE81197B2A3C0E6900B2E5C3 /* Preview Assets.xcassets */; };
 		EE8119862A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119852A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift */; };
-		EE8119902A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE81198F2A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITests.swift */; };
-		EE8119922A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119912A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITestsLaunchTests.swift */; };
 		EE8119A52A3C0EC900B2E5C3 /* DessertListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119A42A3C0EC900B2E5C3 /* DessertListScreen.swift */; };
 		EE8119A72A3C0EEE00B2E5C3 /* DessertListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119A62A3C0EEE00B2E5C3 /* DessertListViewModel.swift */; };
 		EE8119A92A3C0EFC00B2E5C3 /* DessertDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8119A82A3C0EFC00B2E5C3 /* DessertDetailViewModel.swift */; };
@@ -61,8 +59,6 @@
 		EE8119812A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMealDBDessertRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8119852A3C0E6900B2E5C3 /* TheMealDBDessertRecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDBDessertRecipesTests.swift; sourceTree = "<group>"; };
 		EE81198B2A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMealDBDessertRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE81198F2A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDBDessertRecipesUITests.swift; sourceTree = "<group>"; };
-		EE8119912A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDBDessertRecipesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EE8119A42A3C0EC900B2E5C3 /* DessertListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListScreen.swift; sourceTree = "<group>"; };
 		EE8119A62A3C0EEE00B2E5C3 /* DessertListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewModel.swift; sourceTree = "<group>"; };
 		EE8119A82A3C0EFC00B2E5C3 /* DessertDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewModel.swift; sourceTree = "<group>"; };
@@ -131,7 +127,6 @@
 		EE8119732A3C0E6800B2E5C3 /* TheMealDBDessertRecipes */ = {
 			isa = PBXGroup;
 			children = (
-				EE8119B42A3C103100B2E5C3 /* WebServices */,
 				EE8119A32A3C0EA900B2E5C3 /* Screens */,
 				EE8119A22A3C0EA000B2E5C3 /* Views */,
 				EE8119A12A3C0E9C00B2E5C3 /* Models */,
@@ -166,8 +161,6 @@
 		EE81198E2A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EE81198F2A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITests.swift */,
-				EE8119912A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITestsLaunchTests.swift */,
 			);
 			path = TheMealDBDessertRecipesUITests;
 			sourceTree = "<group>";
@@ -175,6 +168,7 @@
 		EE81199E2A3C0E7200B2E5C3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EE8119B52A3C104800B2E5C3 /* WebService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -220,14 +214,6 @@
 				EE8119A42A3C0EC900B2E5C3 /* DessertListScreen.swift */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		EE8119B42A3C103100B2E5C3 /* WebServices */ = {
-			isa = PBXGroup;
-			children = (
-				EE8119B52A3C104800B2E5C3 /* WebService.swift */,
-			);
-			path = WebServices;
 			sourceTree = "<group>";
 		};
 		EE8119B72A3C185A00B2E5C3 /* Mocks */ = {
@@ -420,8 +406,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE8119922A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITestsLaunchTests.swift in Sources */,
-				EE8119902A3C0E6900B2E5C3 /* TheMealDBDessertRecipesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
