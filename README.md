@@ -15,7 +15,7 @@ The MealDBDessertRecipesApp is a mobile application that provides a collection o
 <br>
 
 _Screen Recording of App:_ 
-https://www.youtube.com/shorts/mHzQ_N5sA-A)
+https://www.youtube.com/shorts/mHzQ_N5sA-A
 
 **MVVM Architecture:**
 -----------
